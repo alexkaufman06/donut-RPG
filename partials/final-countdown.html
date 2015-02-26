@@ -6,20 +6,24 @@
 <div class="form-group">
   <div class="row center">
     <div class="col-xs-3">
-      <label for="suspects">Choose your final suspect</label>
+      <label for="suspects">¿Dustin?</label>
       <img src="css/dustin.JPG" ng-click="suspect = 'dustin'">
     </div>
     <div class="col-xs-3">
-      <label for="suspects">Choose your final suspect</label>
+      <label for="suspects">¿Gabe?</label>
       <img src="css/gabe.JPG" ng-click="suspect = 'gabe'">
     </div>
     <div class="col-xs-3">
-      <label for="suspects">Choose your final suspect</label>
+      <label for="suspects">¿Jay?</label>
       <img src="css/jay.JPG" ng-click="suspect = 'jay'">
     </div>
     <div class="col-xs-3">
-      <label for="suspects">Choose your final suspect</label>
+      <label for="suspects">¿Tyler?</label>
       <img src="css/tyler.JPG" ng-click="suspect = 'tyler'">
     </div>
   </div>
+</div>
+
+<div class="col-xs-12" ng-show="suspect">
+  <p>Correct!</p>
 </div>

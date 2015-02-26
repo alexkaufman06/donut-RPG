@@ -1,4 +1,4 @@
-donutRpg.factory("SuspectsFactory", function() {
+donutRpg.factory("SuspectsFactory", function SuspectsFactory($state) {
   var factory = {};
   factory.suspects = [
     {name: "Tyler", guilty: false},

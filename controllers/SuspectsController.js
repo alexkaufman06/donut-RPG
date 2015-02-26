@@ -1,4 +1,4 @@
 donutRpg.controller('SuspectsCtrl', function SuspectsCtrl($scope, $state, SuspectsFactory) {
-  $scope.suspect = SuspectFactory.suspect;
-  $scope.SuspectFactory = SuspectFactory;
+  $scope.suspect = SuspectsFactory.suspect;
+  $scope.SuspectsFactory = SuspectsFactory;
 });
