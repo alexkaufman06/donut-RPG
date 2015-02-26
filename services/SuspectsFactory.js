@@ -1,29 +1,25 @@
-courseRoster.factory('UtilitiesFactory', function() {
-  return {
-    findById: function(collection, id) {
-      for (var i = 0; i < collection.length; i++) {
-        if (collection[i].id === parseInt(id)) {
-          return collection[i];
-        }
-      }
-      return null;
-    }
-  };
+donutRpg.factory("SuspectsFactory", function() {
+  var factory = {};
+  factory.suspects = [
+    {name: "Tyler", guilty: false},
+    {name: "Gabe", guilty: false},
+    {name: "Ron", guilty: false},
+    {name: "Jay", guilty: true}
+  ];
+
+  return factory;
 });
 
-// Dustin's preferred method below:
 
 // courseRoster.factory('UtilitiesFactory', function() {
-//   var factory = {};
-//
-//   factory.findById = function(collection, id) {
-//     for (var i = 0; i < collection.length; i++) {
-//       if (collection[i].id === id) {
-//         return collection[i];
+//   return {
+//     findById: function(collection, id) {
+//       for (var i = 0; i < collection.length; i++) {
+//         if (collection[i].id === parseInt(id)) {
+//           return collection[i];
+//         }
 //       }
 //       return null;
 //     }
 //   };
-//
-//   return factory;
 // });

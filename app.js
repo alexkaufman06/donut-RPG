@@ -13,6 +13,12 @@ donutRpg.config(function($stateProvider) {
     controller: 'DetectiveCtrl'
   });
 
+  $stateProvider.state('final-countdown', {
+    url: "/final-countdown",
+    templateUrl: "partials/final-countdown.html",
+    controller: 'SuspectsCtrl'
+  });
+
   // $stateProvider.state('courses.students', {
   //   url: "/:courseId",
   //   templateUrl: "partials/courses.students.html",
