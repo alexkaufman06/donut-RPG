@@ -6,4 +6,13 @@ completely empty.  All that is left is a partially chewed {{ detective.favorite 
 donut.  Enraged that the donuts are all gone, your frantic eyes search for clues as to who
 could have perpetrated such an injustice, and your eye falls upon {{ SuspectsFactory.innocents[0].item }}.</p>
 
-<h3><a ui-sref="stop1">Next Stage</a></h3>
+{{ SuspectsFactory.innocents }}
+
+<div class="row">
+  <div class="col-xs-6">
+<img src="css/{{ SuspectsFactory.innocents[1].name }}.JPG" ng-click="suspect = '{{ SuspectsFactory.innocents[1].name }}'">
+  </div>
+  <div class="col-xs-6">
+<img src="css/{{ SuspectsFactory.innocents[0].name }}.JPG" ng-click="suspect = '{{ SuspectsFactory.innocents[0].name }}'">
+  </div>
+</div>
