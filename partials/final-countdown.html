@@ -24,6 +24,11 @@
   </div>
 </div>
 
-<div class="col-xs-12" ng-show="suspect">
-  <p>Correct!</p>
+<div ng-show="suspect">
+  <div class="col-xs-12" ng-show="suspect === 'tyler'">
+    <p>Correct!</p>
+  </div>
+  <div class="col-xs-12" ng-show="suspect !== 'tyler'">
+    <p>False!</p>
+  </div>
 </div>

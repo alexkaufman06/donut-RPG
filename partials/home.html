@@ -1,6 +1,6 @@
 <h1><marquee>Welcome to the World's first Donut RPG!</marquee></h1>
 
-<form ng-submit="DetectiveFactory.addDetective()" class="form-inline" role="form">
+<form ng-submit="DetectiveFactory.addDetective(); SuspectsFactory.commitCrime()" class="form-inline" role="form">
   <div class="form-group">
     <input type="text" ng-model="DetectiveFactory.inputtedName" class="form-control" placeholder="Enter Your Name" required>
     <h4>What is your favorite type of Donut?</h4>

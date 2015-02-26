@@ -4,8 +4,25 @@ donutRpg.factory("SuspectsFactory", function SuspectsFactory($state) {
     {name: "Tyler", guilty: false},
     {name: "Gabe", guilty: false},
     {name: "Ron", guilty: false},
-    {name: "Jay", guilty: true}
+    {name: "Jay", guilty: false}
   ];
+
+  factory.commitCrime = function() {
+    var guiltyIndex = Math.floor(Math.random() * 4);
+    factory.suspects[guiltyIndex].guilty = true;
+  };
+
+
+  // below should probably be removed at some point:
+  factory.fingerGuilty = function() {
+    var perpetrator = "";
+    factory.suspects.forEach(function(suspect) {
+      if (suspect.guilty) {
+        perpetrator = suspect.name;
+      }
+    });
+    return perpetrator;
+  };
 
   return factory;
 });
