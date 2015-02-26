@@ -4,15 +4,15 @@
 for the entire class to enjoy.  You walk up to this box and discover the box is
 completely empty.  All that is left is a partially chewed {{ detective.favorite }}
 donut.  Enraged that the donuts are all gone, your frantic eyes search for clues as to who
-could have perpetrated such an injustice, and your eye falls upon {{ SuspectsFactory.innocents[0].item }}.</p>
+could have perpetrated such an injustice, and your eye falls upon a {{ SuspectsFactory.innocents[0].item }}.</p>
 
-{{ SuspectsFactory.innocents }}
-
-<div class="row">
+<div class="row center">
   <div class="col-xs-6">
-<img src="css/{{ SuspectsFactory.innocents[1].name }}.JPG" ng-click="suspect = '{{ SuspectsFactory.innocents[1].name }}'">
+  <h3>Investigate {{ SuspectsFactory.innocents[1].name }}</h3>
+<img ui-sref="stop1-false" src="css/{{ SuspectsFactory.innocents[1].name }}.JPG">
   </div>
   <div class="col-xs-6">
-<img src="css/{{ SuspectsFactory.innocents[0].name }}.JPG" ng-click="suspect = '{{ SuspectsFactory.innocents[0].name }}'">
+    <h3>Investigate {{ SuspectsFactory.innocents[0].name }}</h3>
+<img ui-sref="stop1-true" src="css/{{ SuspectsFactory.innocents[0].name }}.JPG">
   </div>
 </div>

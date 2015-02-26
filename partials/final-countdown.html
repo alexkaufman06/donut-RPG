@@ -1,4 +1,4 @@
-<h1>After multiple interrogations..</h1>
+<h1>After multiple interrogations...</h1>
 
 <p>You have narrowed down your possible suspects and are ready for your final
   accusation.  Choose wisely, as this choice <em>could be your last...</em></p>
@@ -25,10 +25,10 @@
 </div>
 
 <div ng-show="suspect">
-  <div class="col-xs-12" ng-show="suspect == '{{ SuspectsFactory.fingerGuilty().name }}'">
+  <div class="col-xs-12" ng-show="suspect == '{{ SuspectsFactory.perpetrator.name }}'">
     <p>Correct!</p>
   </div>
-  <div class="col-xs-12" ng-show="suspect != '{{ SuspectsFactory.fingerGuilty().name }}'">
+  <div class="col-xs-12" ng-show="suspect != '{{ SuspectsFactory.perpetrator.name }}'">
     <p>False!</p>
   </div>
 </div>

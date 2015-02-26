@@ -1,10 +1,10 @@
 donutRpg.factory("SuspectsFactory", function SuspectsFactory($state) {
   var factory = {};
   factory.suspects = [
-    {name: "Tyler", guilty: false, item: "a nose ring with the world's grossest beardhair attached"},
-    {name: "Gabe", guilty: false, item: 'a chunk of single-origin Panamanian chocolate'},
-    {name: "Dustin", guilty: false, item: 'a lost little girl looking for her daddy'},
-    {name: "Jay", guilty: false, item: 'an empty bottle of maple syrup'}
+    {name: "Tyler", guilty: false, item: "nose ring with the world's grossest beardhair attached"},
+    {name: "Gabe", guilty: false, item: 'chunk of single-origin Panamanian chocolate'},
+    {name: "Dustin", guilty: false, item: 'lost little girl looking for her daddy'},
+    {name: "Jay", guilty: false, item: 'bottle of maple syrup'}
   ];
 
   factory.innocents = [];

@@ -1,0 +1,12 @@
+<h1>You walk up to {{ SuspectsFactory.innocents[0].name }}, angrily waving about the {{ SuspectsFactory.innocents[0].item }}...</h1>
+
+<p>"Whoa, whoa, whoa, Detective {{ detective.name }}," he said.  "I couldn't
+  have been in the lunch room at the time of the deed! I was busy out here,
+  looking for my {{ SuspectsFactory.innocents[0].item }}.  Thanks for finding it!
+  I just looked in the in the lunchroom trash and found {{ SuspectsFactory.perpetrator.item }}. </p>
+
+  <p>I also know that you aren't above eating from the garbage, and while digging in there,
+  I found this {{ detective.favorite }}.  You look hungry.  Here, eat it.</p>
+
+
+  <h3><a ui-sref="final-countdown">Next Stage</a></h3>

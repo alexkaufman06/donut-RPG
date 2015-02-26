@@ -1,0 +1,14 @@
+<h1>You walk up to {{ SuspectsFactory.innocents[1].name }}, angrily waving about the {{ SuspectsFactory.innocents[0].item }}...</h1>
+
+<p>"Whoa, whoa, whoa, Detective {{ detective.name }}, that ain't mine!" he said.  "I couldn't
+  have been in the lunch room at the time of the deed! I was busy out here,
+  looking for my {{ SuspectsFactory.innocents[1].item }}.  Have you seen it?
+  I just looked in the in the lunchroom trash and found {{ SuspectsFactory.perpetrator.item }}. </p>
+
+  <p>I also found this {{ detective.favorite }} in the garbage. I'd give it to you if you weren't
+    such an asshole with your wild accusations.  I'm gonna eat it in front of you, you jerk!</p>
+
+    <h4>Your donut level decreases by one<h4>
+
+
+    <h3><a ui-sref="final-countdown">Next Stage</a></h3>

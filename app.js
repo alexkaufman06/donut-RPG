@@ -13,15 +13,21 @@ donutRpg.config(function($stateProvider) {
     controller: 'DetectiveCtrl'
   });
 
+  $stateProvider.state('stop1-true', {
+    url: "/stop1",
+    templateUrl: "partials/stop1-true.html",
+    controller: 'DetectiveCtrl'
+  });
+
+  $stateProvider.state('stop1-false', {
+    url: "/stop1",
+    templateUrl: "partials/stop1-false.html",
+    controller: 'DetectiveCtrl'
+  });
+
   $stateProvider.state('final-countdown', {
     url: "/final-countdown",
     templateUrl: "partials/final-countdown.html",
     controller: 'SuspectsCtrl'
   });
-
-  // $stateProvider.state('courses.students', {
-  //   url: "/:courseId",
-  //   templateUrl: "partials/courses.students.html",
-  //   controller: 'StudentsCtrl'
-  // });
 });
