@@ -1,34 +1,34 @@
 <h1>After multiple interrogations..</h1>
 
 <p>You have narrowed down your possible suspects and are ready for your final
-  accusation.  Choose wisely, as this choice could be your last</p>
+  accusation.  Choose wisely, as this choice <em>could be your last...</em></p>
 
 <div class="form-group">
   <div class="row center">
     <div class="col-xs-3">
       <label for="suspects">¿Dustin?</label>
-      <img src="css/dustin.JPG" ng-click="suspect = 'dustin'">
+      <img src="css/dustin.JPG" ng-click="suspect = 'Dustin'">
     </div>
     <div class="col-xs-3">
       <label for="suspects">¿Gabe?</label>
-      <img src="css/gabe.JPG" ng-click="suspect = 'gabe'">
+      <img src="css/gabe.JPG" ng-click="suspect = 'Gabe'">
     </div>
     <div class="col-xs-3">
       <label for="suspects">¿Jay?</label>
-      <img src="css/jay.JPG" ng-click="suspect = 'jay'">
+      <img src="css/jay.JPG" ng-click="suspect = 'Jay'">
     </div>
     <div class="col-xs-3">
       <label for="suspects">¿Tyler?</label>
-      <img src="css/tyler.JPG" ng-click="suspect = 'tyler'">
+      <img src="css/tyler.JPG" ng-click="suspect = 'Tyler'">
     </div>
   </div>
 </div>
 
 <div ng-show="suspect">
-  <div class="col-xs-12" ng-show="suspect === 'tyler'">
+  <div class="col-xs-12" ng-show="suspect == '{{ SuspectsFactory.fingerGuilty().name }}'">
     <p>Correct!</p>
   </div>
-  <div class="col-xs-12" ng-show="suspect !== 'tyler'">
+  <div class="col-xs-12" ng-show="suspect != '{{ SuspectsFactory.fingerGuilty().name }}'">
     <p>False!</p>
   </div>
 </div>

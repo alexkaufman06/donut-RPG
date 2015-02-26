@@ -6,6 +6,4 @@ donutRpg.controller('DetectiveCtrl', function DetectiveCtrl($scope, $state, Dete
   $scope.possibleFavorites = ["Bacon Maple Bar","Memphis Mafia","Blueberry Cake","Old Dirty Bastard"];
   $scope.DetectiveFactory.inputtedFavorite = $scope.possibleFavorites[0];
 
-    
-
 });

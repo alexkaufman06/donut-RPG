@@ -2,7 +2,7 @@
 
 <form ng-submit="DetectiveFactory.addDetective(); SuspectsFactory.commitCrime()" class="form-inline" role="form">
   <div class="form-group">
-    <input type="text" ng-model="DetectiveFactory.inputtedName" class="form-control" placeholder="Enter Your Name" required>
+    <input type="text" ng-model="DetectiveFactory.inputtedName" class="form-control" placeholder="Enter Your Name" autofocus required>
     <h4>What is your favorite type of Donut?</h4>
     <select ng-model="DetectiveFactory.inputtedFavorite" class="form-control" ng-options="item for item in possibleFavorites">
     </select><br><br>

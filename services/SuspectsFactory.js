@@ -1,28 +1,28 @@
 donutRpg.factory("SuspectsFactory", function SuspectsFactory($state) {
   var factory = {};
   factory.suspects = [
-    {name: "Tyler", guilty: false},
-    {name: "Gabe", guilty: false},
-    {name: "Ron", guilty: false},
-    {name: "Jay", guilty: false}
+{name: "Tyler", guilty: false, item: "a nose ring with the world's grossest beardhair attached"},
+    {name: "Gabe", guilty: false, item: 'a chunk of single-origin Panamanian chocolate'},
+    {name: "Dustin", guilty: false, item: 'a lost little girl looking for her daddy'},
+    {name: "Jay", guilty: false, item: 'an empty bottle of maple syrup'}
   ];
+
+  factory.innocents = [];
+  factory.perpetrator = {};
 
   factory.commitCrime = function() {
     var guiltyIndex = Math.floor(Math.random() * 4);
     factory.suspects[guiltyIndex].guilty = true;
-  };
-
-
-  // below should probably be removed at some point:
-  factory.fingerGuilty = function() {
-    var perpetrator = "";
     factory.suspects.forEach(function(suspect) {
       if (suspect.guilty) {
-        perpetrator = suspect.name;
+        factory.perpetrator = suspect;
+      } else {
+        factory.innocents.push(suspect);
       }
     });
-    return perpetrator;
   };
+
+
 
   return factory;
 });
