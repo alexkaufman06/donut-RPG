@@ -25,6 +25,24 @@ donutRpg.config(function($stateProvider) {
     controller: 'DetectiveCtrl'
   });
 
+  $stateProvider.state('stop2-true', {
+    url: "/stop2",
+    templateUrl: "partials/stop2-true.html",
+    controller: 'DetectiveCtrl'
+  });
+
+  $stateProvider.state('stop2-false', {
+    url: "/stop2",
+    templateUrl: "partials/stop2-false.html",
+    controller: 'DetectiveCtrl'
+  });
+
+  $stateProvider.state('stop2-truthy', {
+    url: "/stop2",
+    templateUrl: "partials/stop2-truthy.html",
+    controller: 'DetectiveCtrl'
+  });
+
   $stateProvider.state('final-countdown', {
     url: "/final-countdown",
     templateUrl: "partials/final-countdown.html",

@@ -5,8 +5,18 @@
   looking for my {{ SuspectsFactory.innocents[0].item }}.  Thanks for finding it!
   I just looked in the in the lunchroom trash and found {{ SuspectsFactory.perpetrator.item }}. </p>
 
-  <p>I also know that you aren't above eating from the garbage, and while digging in there,
-  I found this {{ detective.favorite }}.  You look hungry.  Here, eat it.</p>
+<p>I also know that you aren't above eating from the garbage, and while digging in there,
+   I found this {{ detective.favorite }}.  You look hungry.  Here, eat it.</p>
 
+<h4>Your donut level increases by one</h4>
 
-  <h3><a ui-sref="final-countdown">Next Stage</a></h3>
+<div class="row center">
+  <div class="col-xs-6">
+    <h3>Investigate {{ SuspectsFactory.perpetrator.name }}</h3>
+    <img ui-sref="stop2-truthy" src="css/{{ SuspectsFactory.perpetrator.name }}.JPG">
+  </div>
+  <div class="col-xs-6">
+    <h3>Investigate {{ SuspectsFactory.innocents[1].name }}</h3>
+    <img ui-sref="stop2-false" src="css/{{ SuspectsFactory.innocents[1].name }}.JPG">
+  </div>
+</div>

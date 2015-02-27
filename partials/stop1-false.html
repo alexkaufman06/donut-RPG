@@ -3,12 +3,21 @@
 <p>"Whoa, whoa, whoa, Detective {{ detective.name }}, that ain't mine!" he said.  "I couldn't
   have been in the lunch room at the time of the deed! I was busy out here,
   looking for my {{ SuspectsFactory.innocents[1].item }}.  Have you seen it?
-  I just looked in the in the lunchroom trash and found {{ SuspectsFactory.perpetrator.item }}. </p>
+  I just looked in the in the lunchroom trash and found {{ SuspectsFactory.innocents[2].item }}. </p>
 
-  <p>I also found this {{ detective.favorite }} in the garbage. I'd give it to you if you weren't
-    such an asshole with your wild accusations.  I'm gonna eat it in front of you, you jerk!</p>
+<p>I also found this {{ detective.favorite }} in the garbage. I'd give it to you if you weren't
+   such an asshole with your wild accusations.  I'm gonna eat my garbage {{ detective.favorite }} donut front of you, you jerk!</p>
 
-    <h4>Your donut level decreases by one<h4>
+<h4>Your donut level decreases by one</h4>
 
 
-    <h3><a ui-sref="final-countdown">Next Stage</a></h3>
+<div class="row center">
+  <div class="col-xs-6">
+    <h3>Investigate {{ SuspectsFactory.innocents[0].name }}</h3>
+    <img ui-sref="stop2-true" src="css/{{ SuspectsFactory.innocents[0].name }}.JPG">
+  </div>
+  <div class="col-xs-6">
+    <h3>Investigate {{ SuspectsFactory.innocents[2].name }}</h3>
+    <img ui-sref="stop2-false" src="css/{{ SuspectsFactory.innocents[2].name }}.JPG">
+  </div>
+</div>
