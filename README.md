@@ -13,7 +13,7 @@ Go to the url in your web browser: localhost:8000
 [View site here](http://alexkaufman06.github.io/donut-RPG/index.html)
 
 ### Bug Reports:
-None known
+Link above does not load css.
 ### Author:
 Alex Kaufman & Ryan McCarthy
 #### License
