@@ -1,5 +1,3 @@
-(http://alexkaufman06.github.io/donut-RPG/index.html)
-
 # Donut RPG
 This is an app I that is very similar to the boardgame clue.  Once the user enters their name, a random Epicodus classmate
 is assigned as the donut theif.  Each classmate has clues that they drop in the story line to guide the player's choice.  It 
